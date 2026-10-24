@@ -1,0 +1,417 @@
+/* Affinity Cart storefront. Inherits the theme's fonts and colours; taste
+   violet is its only own colour, so shoppers (and merchants) can always tell
+   which picks come from the taste graph. */
+:root {
+  --ac-violet: #6a3df0;
+  --ac-violet-ink: #4b25c9;
+  --ac-violet-soft: #efeafe;
+}
+
+.affinity-cart {
+  margin: 2.5rem 0;
+}
+.affinity-cart:empty {
+  display: none;
+}
+.affinity-cart .ac-block + .ac-block {
+  margin-top: 2.25rem;
+}
+.affinity-cart .ac-title {
+  margin: 0 0 0.25rem;
+  font-size: 1.4rem;
+}
+.affinity-cart .ac-block > .ac-title {
+  padding-top: 1rem;
+  border-top: 2px solid var(--ac-violet);
+}
+.affinity-cart .ac-lede {
+  margin: 0 0 1rem;
+  opacity: 0.75;
+  max-width: 60ch;
+}
+
+/* Lists of picks */
+.ac-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.ac-card {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr) auto;
+  gap: 0.9rem;
+  align-items: center;
+}
+.ac-list-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr));
+  gap: 1.25rem;
+}
+.ac-list-row .ac-card {
+  grid-template-columns: 64px minmax(0, 1fr);
+  align-items: start;
+}
+.ac-list-row .ac-buy {
+  grid-column: 2;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.ac-thumb {
+  display: flex;
+  align-items: flex-end;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 2px;
+  background: var(--wp--preset--color--contrast, #1d2327);
+  color: var(--wp--preset--color--base, #fff);
+  text-decoration: none;
+}
+.ac-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ac-thumb span {
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+.ac-name {
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.3;
+}
+.ac-name:hover {
+  text-decoration: underline;
+}
+.ac-reason {
+  margin: 0.15rem 0 0.35rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+.ac-bar {
+  position: relative;
+  height: 1.1rem;
+  max-width: 300px;
+  background: var(--ac-violet-soft);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.ac-bar span {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: var(--ac-violet);
+}
+.ac-bar em {
+  position: relative;
+  display: block;
+  padding-left: 0.45rem;
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.1rem;
+  letter-spacing: 0;
+  white-space: nowrap;
+  color: #fff;
+}
+.ac-buy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+}
+.ac-add {
+  border: 1.5px solid var(--ac-violet);
+  background: transparent;
+  color: var(--ac-violet);
+  border-radius: 999px;
+  padding: 0.25rem 0.95rem;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ac-add:hover,
+.ac-add-strong {
+  background: var(--ac-violet);
+  color: #fff;
+}
+.ac-add-strong:hover {
+  background: var(--ac-violet-ink);
+}
+.ac-add:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.ac-credit {
+  margin: 1rem 0 0;
+  font-size: 0.78rem;
+  opacity: 0.6;
+}
+.ac-wait {
+  margin: 1rem 0 0;
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+.ac-wait::before {
+  content: "";
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background: var(--ac-violet);
+  animation: ac-pulse 1s ease-in-out infinite alternate;
+}
+@keyframes ac-pulse {
+  from { opacity: 0.25; }
+  to { opacity: 1; }
+}
+
+/* Shop: picks row and badges on the grid */
+.affinity-cart[data-context="shop"] {
+  margin: 0 0 2.5rem;
+  padding: 1.25rem 1.25rem 1rem;
+  border: 2px solid var(--ac-violet);
+  border-radius: 4px;
+}
+.ac-shop-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+.ac-city label {
+  font-size: 0.9rem;
+}
+.ac-city select {
+  margin-left: 0.35rem;
+  font: inherit;
+  padding: 0.15rem 0.35rem;
+}
+.ac-city small {
+  display: block;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+li.ac-picked {
+  position: relative;
+}
+li.ac-picked img {
+  outline: 3px solid var(--ac-violet);
+  outline-offset: -3px;
+}
+.ac-badge {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  z-index: 2;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--ac-violet);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+/* Kits */
+.ac-kit-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 120px));
+  gap: 6px;
+}
+.ac-kit-buy {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.9rem;
+}
+.ac-kit-buy s {
+  opacity: 0.6;
+}
+
+/* Toast after adding */
+.ac-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.5rem;
+  z-index: 100000;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.7rem 1.1rem;
+  border-radius: 999px;
+  background: #1d2327;
+  color: #fff;
+  font-size: 0.95rem;
+  transform: translate(-50%, 200%);
+  transition: transform 0.25s ease;
+}
+.ac-toast.is-on {
+  transform: translate(-50%, 0);
+}
+.ac-toast a {
+  color: #c5b5ff;
+  font-weight: 600;
+}
+
+/* Gift finder */
+.ac-gift-fab {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.3rem 0.85rem 1.05rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ac-violet);
+  color: #fff;
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgb(106 61 240 / 0.4);
+  cursor: pointer;
+}
+.ac-gift-fab:hover {
+  background: var(--ac-violet-ink);
+}
+.ac-gift {
+  width: min(560px, calc(100% - 2rem));
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+  padding: 1.75rem;
+  border: 0;
+  border-radius: 8px;
+  font: inherit;
+}
+.ac-gift::backdrop {
+  background: rgb(20 18 40 / 0.45);
+}
+.ac-gift h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.6rem;
+}
+.ac-gift .ac-lede {
+  margin: 0 0 1.1rem;
+  opacity: 0.75;
+}
+.ac-gift-close {
+  float: right;
+  margin: -0.5rem -0.5rem 0 0;
+}
+.ac-gift-close button {
+  border: 0;
+  background: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.ac-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.45rem;
+  border: 1.5px solid #c9c6d6;
+  border-radius: 4px;
+}
+.ac-chips:focus-within {
+  border-color: var(--ac-violet);
+}
+.ac-chips input {
+  flex: 1 1 12ch;
+  min-width: 10ch;
+  border: 0;
+  outline: 0;
+  padding: 0.35rem;
+  font: inherit;
+  background: transparent;
+}
+.ac-chip {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  background: var(--ac-violet);
+  color: #fff;
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.ac-examples {
+  margin: 0.55rem 0 0;
+  font-size: 0.88rem;
+  opacity: 0.85;
+}
+.ac-examples button {
+  border: 0;
+  background: none;
+  padding: 0;
+  color: var(--ac-violet);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.ac-gift-row {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+.ac-gift-row select {
+  flex: 1;
+  padding: 0.55rem;
+  font: inherit;
+}
+.ac-gift-row .ac-add {
+  flex: 1.3;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+}
+.ac-gift-out {
+  margin-top: 1.25rem;
+}
+.ac-gift-summary {
+  font-weight: 600;
+  margin: 0 0 1rem;
+}
+.ac-trace {
+  margin-top: 1rem;
+  font-size: 0.88rem;
+}
+.ac-trace summary {
+  color: var(--ac-violet);
+  cursor: pointer;
+}
+.ac-error {
+  color: #a3242c;
+}
+
+/* On phones the gift finder shrinks to its icon so it doesn't cover Add buttons. */
+@media (max-width: 600px) {
+  .ac-gift-fab {
+    right: 0.9rem;
+    bottom: 0.9rem;
+    padding: 0.85rem;
+  }
+  .ac-gift-fab span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ac-wait::before { animation: none; }
+  .ac-toast { transition: none; }
+}

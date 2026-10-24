@@ -1,0 +1,36 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/wp-admin/admin.php?page=affinity-cart",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "login": true,
+  "steps": [
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "woocommerce"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "activatePlugin",
+      "pluginPath": "affinity-cart/affinity-cart.php"
+    },
+    {
+      "step": "activatePlugin",
+      "pluginPath": "nordvik-demo/nordvik-demo.php"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-load.php'; update_option('affinity_cart_key', 'nordvik-local-dev'); update_option('affinity_cart_salt', 'nordvik-demo-salt'); nordvik_demo_seed();"
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+[
+ {
+  "ref": "c001",
+  "first_name": "Óscar",
+  "last_name": "Ruiz",
+  "email": "scar.ruiz1@example.com",
+  "city": "Barcelona",
+  "country": "ES"
+ },
+ {
+  "ref": "c002",
+  "first_name": "Joana",
+  "last_name": "Castro",
+  "email": "joana.castro2@example.com",
+  "city": "Bilbao",
+  "country": "ES"
+ },
+ {
+  "ref": "c003",
+  "first_name": "Valeria",
+  "last_name": "Vidal",
+  "email": "valeria.vidal3@example.com",
+  "city": "Berlin",
+  "country": "DE"
+ },
+ {
+  "ref": "c004",
+  "first_name": "Raúl",
+  "last_name": "Torres",
+  "email": "ral.torres4@example.com",
+  "city": "Bilbao",
+  "country": "ES"
+ },
+ {
+  "ref": "c005",
+  "first_name": "Clara",
+  "last_name": "Vidal",
+  "email": "clara.vidal5@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c006",
+  "first_name": "Noa",
+  "last_name": "Castro",
+  "email": "noa.castro6@example.com",
+  "city": "Bilbao",
+  "country": "ES"
+ },
+ {
+  "ref": "c007",
+  "first_name": "Nuno",
+  "last_name": "Prieto",
+  "email": "nuno.prieto7@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c008",
+  "first_name": "Raúl",
+  "last_name": "Ruiz",
+  "email": "ral.ruiz8@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c009",
+  "first_name": "Lucía",
+  "last_name": "Prieto",
+  "email": "luca.prieto9@example.com",
+  "city": "Lisbon",
+  "country": "PT"
+ },
+ {
+  "ref": "c010",
+  "first_name": "Sofía",
+  "last_name": "Moreno",
+  "email": "sofa.moreno10@example.com",
+  "city": "Bilbao",
+  "country": "ES"
+ },
+ {
+  "ref": "c011",
+  "first_name": "Diego",
+  "last_name": "Moreno",
+  "email": "diego.moreno11@example.com",
+  "city": "Barcelona",
+  "country": "ES"
+ },
+ {
+  "ref": "c012",
+  "first_name": "Sofía",
+  "last_name": "Fernández",
+  "email": "sofa.fernndez12@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c013",
+  "first_name": "Rita",
+  "last_name": "Navarro",
+  "email": "rita.navarro13@example.com",
+  "city": "Lisbon",
+  "country": "PT"
+ },
+ {
+  "ref": "c014",
+  "first_name": "Valeria",
+  "last_name": "Fernández",
+  "email": "valeria.fernndez14@example.com",
+  "city": "Lisbon",
+  "country": "PT"
+ },
+ {
+  "ref": "c015",
+  "first_name": "Sofía",
+  "last_name": "Silva",
+  "email": "sofa.silva15@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c016",
+  "first_name": "Adrián",
+  "last_name": "Gil",
+  "email": "adrin.gil16@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c017",
+  "first_name": "Pablo",
+  "last_name": "Castro",
+  "email": "pablo.castro17@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c018",
+  "first_name": "Leo",
+  "last_name": "Castro",
+  "email": "leo.castro18@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c019",
+  "first_name": "Marta",
+  "last_name": "Ortega",
+  "email": "marta.ortega19@example.com",
+  "city": "Barcelona",
+  "country": "ES"
+ },
+ {
+  "ref": "c020",
+  "first_name": "Pol",
+  "last_name": "Martín",
+  "email": "pol.martn20@example.com",
+  "city": "Bilbao",
+  "country": "ES"
+ },
+ {
+  "ref": "c021",
+  "first_name": "Joana",
+  "last_name": "Gil",
+  "email": "joana.gil21@example.com",
+  "city": "Berlin",
+  "country": "DE"
+ },
+ {
+  "ref": "c022",
+  "first_name": "Lara",
+  "last_name": "Gil",
+  "email": "lara.gil22@example.com",
+  "city": "Lisbon",
+  "country": "PT"
+ },
+ {
+  "ref": "c023",
+  "first_name": "Lucía",
+  "last_name": "Ortega",
+  "email": "luca.ortega23@example.com",
+  "city": "Barcelona",
+  "country": "ES"
+ },
+ {
+  "ref": "c024",
+  "first_name": "Leo",
+  "last_name": "López",
+  "email": "leo.lpez24@example.com",
+  "city": "Valencia",
+  "country": "ES"
+ },
+ {
+  "ref": "c025",
+  "first_name": "Nerea",
+  "last_name": "Sánchez",
+  "email": "nerea.snchez25@example.com",
+  "city": "Barcelona",
+  "country": "ES"
+ },
+ {
+  "ref": "c026",
+  "first_name": "Rita",
+  "last_name": "Torres",
+  "email": "rita.torres26@example.com",
+  "city": "Berlin",
+  "country": "DE"
+ },
+ {
+  "ref": "c027",
+  "first_name": "Elena",
+  "last_name": "Torres",
+  "email": "elena.torres27@example.com",
+  "city": "Lisbon",
+  "country": "PT"
+ },
+ {
+  "ref": "c028",
+  "first_name": "Alba",
+  "last_name": "Vidal",
+  "email": "alba.vidal28@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c029",
+  "first_name": "Raúl",
+  "last_name": "Navarro",
+  "email": "ral.navarro29@example.com",
+  "city": "Berlin",
+  "country": "DE"
+ },
+ {
+  "ref": "c030",
+  "first_name": "Rita",
+  "last_name": "Vidal",
+  "email": "rita.vidal30@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c031",
+  "first_name": "Nerea",
+  "last_name": "Ortega",
+  "email": "nerea.ortega31@example.com",
+  "city": "Bilbao",
+  "country": "ES"
+ },
+ {
+  "ref": "c032",
+  "first_name": "Martina",
+  "last_name": "Torres",
+  "email": "martina.torres32@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c033",
+  "first_name": "Lucía",
+  "last_name": "Martín",
+  "email": "luca.martn33@example.com",
+  "city": "Bilbao",
+  "country": "ES"
+ },
+ {
+  "ref": "c034",
+  "first_name": "Lara",
+  "last_name": "Prieto",
+  "email": "lara.prieto34@example.com",
+  "city": "Valencia",
+  "country": "ES"
+ },
+ {
+  "ref": "c035",
+  "first_name": "Iker",
+  "last_name": "Weber",
+  "email": "iker.weber35@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c036",
+  "first_name": "Daniel",
+  "last_name": "Navarro",
+  "email": "daniel.navarro36@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c037",
+  "first_name": "Mia",
+  "last_name": "García",
+  "email": "mia.garca37@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c038",
+  "first_name": "Paula",
+  "last_name": "Silva",
+  "email": "paula.silva38@example.com",
+  "city": "Valencia",
+  "country": "ES"
+ },
+ {
+  "ref": "c039",
+  "first_name": "Nuno",
+  "last_name": "Sánchez",
+  "email": "nuno.snchez39@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c040",
+  "first_name": "Noa",
+  "last_name": "López",
+  "email": "noa.lpez40@example.com",
+  "city": "Berlin",
+  "country": "DE"
+ },
+ {
+  "ref": "c041",
+  "first_name": "Hugo",
+  "last_name": "Prieto",
+  "email": "hugo.prieto41@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c042",
+  "first_name": "Noa",
+  "last_name": "Serra",
+  "email": "noa.serra42@example.com",
+  "city": "Barcelona",
+  "country": "ES"
+ },
+ {
+  "ref": "c043",
+  "first_name": "Tomás",
+  "last_name": "Castro",
+  "email": "toms.castro43@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c044",
+  "first_name": "Valeria",
+  "last_name": "Costa",
+  "email": "valeria.costa44@example.com",
+  "city": "Berlin",
+  "country": "DE"
+ },
+ {
+  "ref": "c045",
+  "first_name": "Mia",
+  "last_name": "Ruiz",
+  "email": "mia.ruiz45@example.com",
+  "city": "Barcelona",
+  "country": "ES"
+ },
+ {
+  "ref": "c046",
+  "first_name": "Clara",
+  "last_name": "Romero",
+  "email": "clara.romero46@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c047",
+  "first_name": "Rita",
+  "last_name": "Becker",
+  "email": "rita.becker47@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c048",
+  "first_name": "Marta",
+  "last_name": "Serra",
+  "email": "marta.serra48@example.com",
+  "city": "Barcelona",
+  "country": "ES"
+ },
+ {
+  "ref": "c049",
+  "first_name": "Álvaro",
+  "last_name": "Navarro",
+  "email": "lvaro.navarro49@example.com",
+  "city": "Lisbon",
+  "country": "PT"
+ },
+ {
+  "ref": "c050",
+  "first_name": "Joana",
+  "last_name": "Romero",
+  "email": "joana.romero50@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c051",
+  "first_name": "Inés",
+  "last_name": "Becker",
+  "email": "ins.becker51@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c052",
+  "first_name": "Pablo",
+  "last_name": "Sánchez",
+  "email": "pablo.snchez52@example.com",
+  "city": "Barcelona",
+  "country": "ES"
+ },
+ {
+  "ref": "c053",
+  "first_name": "Óscar",
+  "last_name": "Prieto",
+  "email": "scar.prieto53@example.com",
+  "city": "Barcelona",
+  "country": "ES"
+ },
+ {
+  "ref": "c054",
+  "first_name": "Tomás",
+  "last_name": "Castro",
+  "email": "toms.castro54@example.com",
+  "city": "Lisbon",
+  "country": "PT"
+ },
+ {
+  "ref": "c055",
+  "first_name": "Irene",
+  "last_name": "Gil",
+  "email": "irene.gil55@example.com",
+  "city": "Lisbon",
+  "country": "PT"
+ },
+ {
+  "ref": "c056",
+  "first_name": "Mia",
+  "last_name": "Navarro",
+  "email": "mia.navarro56@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c057",
+  "first_name": "Pol",
+  "last_name": "Gil",
+  "email": "pol.gil57@example.com",
+  "city": "Valencia",
+  "country": "ES"
+ },
+ {
+  "ref": "c058",
+  "first_name": "Clara",
+  "last_name": "Prieto",
+  "email": "clara.prieto58@example.com",
+  "city": "Madrid",
+  "country": "ES"
+ },
+ {
+  "ref": "c059",
+  "first_name": "Álvaro",
+  "last_name": "Castro",
+  "email": "lvaro.castro59@example.com",
+  "city": "Berlin",
+  "country": "DE"
+ },
+ {
+  "ref": "c060",
+  "first_name": "Inés",
+  "last_name": "Vidal",
+  "email": "ins.vidal60@example.com",
+  "city": "Lisbon",
+  "country": "PT"
+ }
+]

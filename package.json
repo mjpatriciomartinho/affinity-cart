@@ -1,0 +1,18 @@
+{
+  "name": "affinity-cart",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev -w @affinity-cart/api",
+    "dev:wp": "playground/start.sh",
+    "build:admin": "npm run build -w @affinity-cart/admin",
+    "watch:admin": "npm run watch -w @affinity-cart/admin",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm test --workspaces --if-present"
+  }
+}

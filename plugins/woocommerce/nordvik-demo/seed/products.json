@@ -1,0 +1,371 @@
+[
+ {
+  "sku": "NV-101",
+  "name": "Kånken Classic Backpack",
+  "brand": "Fjällräven",
+  "category": "Bags",
+  "price": 115,
+  "stock": 30,
+  "description": "The iconic Swedish daypack in Vinylon F."
+ },
+ {
+  "sku": "NV-102",
+  "name": "Daylite Plus Pack",
+  "brand": "Osprey",
+  "category": "Bags",
+  "price": 70,
+  "stock": 30,
+  "description": "20 L everyday hiking daypack."
+ },
+ {
+  "sku": "NV-103",
+  "name": "Waterproof Backpack Mini",
+  "brand": "Rains",
+  "category": "Bags",
+  "price": 95,
+  "stock": 60,
+  "description": "Matte waterproof backpack from Aarhus."
+ },
+ {
+  "sku": "NV-104",
+  "name": "Little America Backpack",
+  "brand": "Herschel Supply Co",
+  "category": "Bags",
+  "price": 120,
+  "stock": 45,
+  "description": "Mountaineering-inspired laptop backpack."
+ },
+ {
+  "sku": "NV-105",
+  "name": "Leather Hiking Boots",
+  "brand": "Nordvik",
+  "category": "Footwear",
+  "price": 159,
+  "stock": 45,
+  "description": "Waxed leather mid boots with a Vibram sole, for long days on the trail."
+ },
+ {
+  "sku": "NV-106",
+  "name": "1460 Smooth Leather Boots",
+  "brand": "Dr. Martens",
+  "category": "Footwear",
+  "price": 199,
+  "stock": 45,
+  "description": "8-eye boot with the AirWair sole."
+ },
+ {
+  "sku": "NV-107",
+  "name": "Boston Soft Footbed Clog",
+  "brand": "Birkenstock",
+  "category": "Footwear",
+  "price": 145,
+  "stock": 30,
+  "description": "Suede clog with a cork-latex footbed."
+ },
+ {
+  "sku": "NV-108",
+  "name": "Better Sweater Fleece",
+  "brand": "Patagonia",
+  "category": "Apparel",
+  "price": 139,
+  "stock": 120,
+  "description": "Recycled sweater-knit fleece."
+ },
+ {
+  "sku": "NV-109",
+  "name": "Atom Hoody",
+  "brand": "Arc'teryx",
+  "category": "Apparel",
+  "price": 260,
+  "stock": 30,
+  "description": "Light insulated hoody for cold mornings."
+ },
+ {
+  "sku": "NV-110",
+  "name": "Merino Hiking Socks",
+  "brand": "Darn Tough",
+  "category": "Apparel",
+  "price": 26,
+  "stock": 120,
+  "description": "Vermont-made merino socks with a lifetime guarantee."
+ },
+ {
+  "sku": "NV-111",
+  "name": "Watch Hat Beanie",
+  "brand": "Carhartt WIP",
+  "category": "Apparel",
+  "price": 29,
+  "stock": 0,
+  "description": "Rib-knit beanie."
+ },
+ {
+  "sku": "NV-112",
+  "name": "Chair One Camp Chair",
+  "brand": "Helinox",
+  "category": "Outdoor",
+  "price": 109,
+  "stock": 80,
+  "description": "Ultralight packable chair."
+ },
+ {
+  "sku": "NV-113",
+  "name": "Rechargeable Headlamp 425",
+  "brand": "BioLite",
+  "category": "Outdoor",
+  "price": 59,
+  "stock": 30,
+  "description": "Slim rechargeable headlamp."
+ },
+ {
+  "sku": "NV-114",
+  "name": "No.08 Folding Knife",
+  "brand": "Opinel",
+  "category": "Outdoor",
+  "price": 19,
+  "stock": 30,
+  "description": "Beechwood handle, carbon steel blade."
+ },
+ {
+  "sku": "NV-115",
+  "name": "Insulated Bottle 1L",
+  "brand": "Stanley",
+  "category": "Outdoor",
+  "price": 49,
+  "stock": 30,
+  "description": "Vacuum bottle that keeps coffee hot for 24 h."
+ },
+ {
+  "sku": "NV-116",
+  "name": "6-Cup Pour-Over Coffeemaker",
+  "brand": "Chemex",
+  "category": "Coffee",
+  "price": 52,
+  "stock": 45,
+  "description": "Hand-blown glass pour-over, a 1941 design."
+ },
+ {
+  "sku": "NV-117",
+  "name": "Stagg EKG Electric Kettle",
+  "brand": "Fellow",
+  "category": "Coffee",
+  "price": 165,
+  "stock": 45,
+  "description": "Gooseneck kettle with precise temperature control."
+ },
+ {
+  "sku": "NV-118",
+  "name": "Single-Origin Ethiopia Beans 250 g",
+  "brand": "Nordvik",
+  "category": "Coffee",
+  "price": 16,
+  "stock": 120,
+  "description": "Washed Yirgacheffe, light roast, notes of jasmine and bergamot. Roasted in Madrid."
+ },
+ {
+  "sku": "NV-119",
+  "name": "Enamel Camp Mug",
+  "brand": "Nordvik",
+  "category": "Coffee",
+  "price": 18,
+  "stock": 120,
+  "description": "Speckled enamel mug for campfire coffee."
+ },
+ {
+  "sku": "NV-120",
+  "name": "Classic Wool Blanket",
+  "brand": "Pendleton",
+  "category": "Home",
+  "price": 229,
+  "stock": 30,
+  "description": "Jacquard wool blanket woven in Oregon."
+ },
+ {
+  "sku": "NV-121",
+  "name": "Baies Scented Candle",
+  "brand": "Diptyque",
+  "category": "Home",
+  "price": 72,
+  "stock": 120,
+  "description": "Blackcurrant leaves and Bulgarian rose."
+ },
+ {
+  "sku": "NV-122",
+  "name": "Emberton II Speaker",
+  "brand": "Marshall",
+  "category": "Audio",
+  "price": 169,
+  "stock": 0,
+  "description": "Portable speaker with 30 h battery."
+ },
+ {
+  "sku": "NV-123",
+  "name": "AT-LP60X Turntable",
+  "brand": "Audio-Technica",
+  "category": "Audio",
+  "price": 149,
+  "stock": 45,
+  "description": "Fully automatic belt-drive turntable."
+ },
+ {
+  "sku": "NV-124",
+  "name": "Now+ Instant Camera",
+  "brand": "Polaroid",
+  "category": "Photo",
+  "price": 149,
+  "stock": 120,
+  "description": "Bluetooth-connected instant camera."
+ },
+ {
+  "sku": "NV-125",
+  "name": "Instax Mini 12",
+  "brand": "Fujifilm",
+  "category": "Photo",
+  "price": 89,
+  "stock": 80,
+  "description": "Compact instant camera."
+ },
+ {
+  "sku": "NV-126",
+  "name": "Medium A5 Dotted Notebook",
+  "brand": "Leuchtturm1917",
+  "category": "Stationery",
+  "price": 23,
+  "stock": 45,
+  "description": "Dot grid notebook, numbered pages."
+ },
+ {
+  "sku": "NV-127",
+  "name": "Classic Notebook Large",
+  "brand": "Moleskine",
+  "category": "Stationery",
+  "price": 24,
+  "stock": 80,
+  "description": "Hard cover ruled notebook."
+ },
+ {
+  "sku": "NV-128",
+  "name": "Into the Wild — Jon Krakauer",
+  "brand": "Anchor Books",
+  "category": "Books",
+  "price": 16,
+  "stock": 120,
+  "description": "Paperback. Christopher McCandless walks into the Alaskan wilderness."
+ },
+ {
+  "sku": "NV-129",
+  "name": "Walden — Henry David Thoreau",
+  "brand": "Penguin Classics",
+  "category": "Books",
+  "price": 12,
+  "stock": 60,
+  "description": "Paperback. Two years in a cabin by Walden Pond."
+ },
+ {
+  "sku": "NV-130",
+  "name": "The Kinfolk Table",
+  "brand": "Kinfolk",
+  "category": "Books",
+  "price": 35,
+  "stock": 30,
+  "description": "Recipes for small gatherings."
+ },
+ {
+  "sku": "NV-131",
+  "name": "The Hobbit — J.R.R. Tolkien",
+  "brand": "HarperCollins",
+  "category": "Books",
+  "price": 14,
+  "stock": 45,
+  "description": "Paperback. There and back again."
+ },
+ {
+  "sku": "NV-132",
+  "name": "For Emma, Forever Ago — Bon Iver (LP)",
+  "brand": "Jagjaguwar",
+  "category": "Vinyl",
+  "price": 29,
+  "stock": 80,
+  "description": "The cabin-in-Wisconsin debut, on 180 g vinyl."
+ },
+ {
+  "sku": "NV-133",
+  "name": "Helplessness Blues — Fleet Foxes (LP)",
+  "brand": "Sub Pop",
+  "category": "Vinyl",
+  "price": 32,
+  "stock": 0,
+  "description": "Double LP."
+ },
+ {
+  "sku": "NV-134",
+  "name": "In Rainbows — Radiohead (LP)",
+  "brand": "XL Recordings",
+  "category": "Vinyl",
+  "price": 30,
+  "stock": 60,
+  "description": "180 g vinyl."
+ },
+ {
+  "sku": "NV-135",
+  "name": "Random Access Memories — Daft Punk (LP)",
+  "brand": "Columbia",
+  "category": "Vinyl",
+  "price": 38,
+  "stock": 60,
+  "description": "Double LP."
+ },
+ {
+  "sku": "NV-136",
+  "name": "Alan Wake 2 (PS5)",
+  "brand": "Remedy Entertainment",
+  "category": "Video games",
+  "price": 49,
+  "stock": 45,
+  "description": "Survival horror. A writer trapped in a nightmare that is rewriting reality."
+ },
+ {
+  "sku": "NV-137",
+  "name": "Death Stranding Director's Cut (PS5)",
+  "brand": "Kojima Productions",
+  "category": "Video games",
+  "price": 39,
+  "stock": 45,
+  "description": "Cross a broken America on foot to reconnect it."
+ },
+ {
+  "sku": "NV-138",
+  "name": "Stardew Valley (Switch)",
+  "brand": "ConcernedApe",
+  "category": "Video games",
+  "price": 14,
+  "stock": 60,
+  "description": "Inherit your grandfather's farm and start over."
+ },
+ {
+  "sku": "NV-139",
+  "name": "Silent Hill 2 (PS5)",
+  "brand": "Konami",
+  "category": "Video games",
+  "price": 59,
+  "stock": 30,
+  "description": "Psychological horror remake of the 2001 classic."
+ },
+ {
+  "sku": "NV-140",
+  "name": "Wingspan",
+  "brand": "Stonemaier Games",
+  "category": "Board games",
+  "price": 55,
+  "stock": 30,
+  "description": "Competitive bird-collection engine builder."
+ },
+ {
+  "sku": "NV-141",
+  "name": "Catan",
+  "brand": "Kosmos",
+  "category": "Board games",
+  "price": 45,
+  "stock": 80,
+  "description": "Trade, build and settle the island of Catan."
+ }
+]

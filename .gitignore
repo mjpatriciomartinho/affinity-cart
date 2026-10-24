@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.cache/
+.env*
+*.log
+.DS_Store
+# Qloo response data must never be committed (hackathon terms)
+**/qloo-cache/
+**/out/
+plugins/woocommerce/affinity-cart/assets/admin/
