@@ -39,7 +39,21 @@ npm run dev:api     # http://localhost:8787/v1
 npm run dev:wp      # http://127.0.0.1:9400/wp-admin/admin.php?page=affinity-cart
 ```
 
-The Playground site is rebuilt and re-seeded on every start, so run "Read store" and the steps again. Qloo responses are cached under `.cache/` (gitignored) and never committed.
+The local site uses a fixed store key, so results survive restarts (product ids are re-matched by SKU). Qloo responses are cached under `.cache/` (gitignored) and never committed. If wp-admin suddenly says the plugins have "no valid header", the Playground mounts went stale after hours running: restart `npm run dev:wp`.
+
+```sh
+npm test          # engine + API unit tests
+npm run typecheck
+```
+
+## Deploy
+
+```sh
+AWS_PROFILE=<admin> scripts/deploy-api.sh                 # Lambda + Function URL + state bucket
+scripts/package-demo.sh <api-url> <public-demo-base-url>  # Playground blueprint + plugin zips
+```
+
+The public demo shares one store key on purpose; spend is capped per store per day and per shopper per hour (`apps/api/src/limits.ts`), and full catalog re-profiling is disabled for it.
 
 ## License
 
