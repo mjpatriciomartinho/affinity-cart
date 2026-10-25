@@ -1,0 +1,39 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ManageAffinityCartLambda",
+      "Effect": "Allow",
+      "Action": [
+        "lambda:GetFunction",
+        "lambda:GetFunctionConfiguration",
+        "lambda:GetFunctionUrlConfig",
+        "lambda:GetPolicy",
+        "lambda:UpdateFunctionCode",
+        "lambda:UpdateFunctionConfiguration",
+        "lambda:PutFunctionConcurrency",
+        "lambda:GetFunctionConcurrency",
+        "lambda:UpdateFunctionUrlConfig"
+      ],
+      "Resource": "arn:aws:lambda:eu-west-1:733261828358:function:affinity-cart-*"
+    },
+    {
+      "Sid": "ReadAffinityCartLogs",
+      "Effect": "Allow",
+      "Action": ["logs:FilterLogEvents", "logs:GetLogEvents", "logs:DescribeLogStreams"],
+      "Resource": "arn:aws:logs:eu-west-1:733261828358:log-group:/aws/lambda/affinity-cart-*"
+    },
+    {
+      "Sid": "SpendAlerts",
+      "Effect": "Allow",
+      "Action": ["budgets:ModifyBudget", "budgets:ViewBudget"],
+      "Resource": "arn:aws:budgets::733261828358:budget/affinity-cart-*"
+    },
+    {
+      "Sid": "AlarmsOnTheApi",
+      "Effect": "Allow",
+      "Action": ["cloudwatch:PutMetricAlarm", "cloudwatch:DescribeAlarms"],
+      "Resource": "arn:aws:cloudwatch:eu-west-1:733261828358:alarm:affinity-cart-*"
+    }
+  ]
+}
