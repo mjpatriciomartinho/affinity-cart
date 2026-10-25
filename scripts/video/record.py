@@ -218,7 +218,51 @@ def scene_ghost(s, dur):
         s.click(btn); s.pg.wait_for_selector("text=Edit draft product", timeout=60000)
 
 
-SCENES = {"03-shop": scene_shop, "04-city": scene_city, "05-product": scene_product, "06-gift": scene_gift,
+HIDE_US = "document.head.insertAdjacentHTML('beforeend', '<style>.affinity-cart,.ac-gift-fab{display:none!important}</style>')"
+
+
+def scene_problem(s, dur):
+    # WooCommerce's own suggestion, with Affinity Cart hidden: more of the same.
+    s.pg.goto(B + "/product/for-emma-forever-ago-bon-iver-lp/", timeout=120000)
+    s.pg.wait_for_selector("text=Related products", timeout=60000)
+    s.pg.evaluate(HIDE_US); s.pg.wait_for_timeout(500)
+    s.mark("ready")
+    s.hold(2.0)
+    y = s.pg.locator("text=Related products").first.bounding_box()["y"]
+    s.scroll(y - 140, steps=45, pause=0.04); s.hold(1.0)
+    cards = s.pg.locator("li.wc-block-product, li.product")
+    for i in range(min(3, cards.count())):
+        s.move_to(cards.nth(i).locator("img").first, steps=30); s.hold(0.9)
+
+
+def hop(s, url, ready_sel, first=False):
+    """Jump to another screen; the load time is cut in the edit."""
+    a = round(time.time() - s.t0, 2)
+    s.pg.goto(url, timeout=120000)
+    s.pg.wait_for_selector(ready_sel, timeout=60000)
+    s.pg.wait_for_timeout(500)
+    if first:
+        s.mark("ready")
+    else:
+        s.marks.setdefault("cuts", []).append([a, round(time.time() - s.t0, 2) - 0.1])
+
+
+def scene_idea(s, dur):
+    hop(s, B + "/?affinity_city=Bilbao", ".ac-shop-head", first=True)
+    s.pg.evaluate("document.querySelector('.affinity-cart').scrollIntoView({block: 'start'}); window.scrollBy(0, -30)")
+    s.move_to(s.pg.locator(".affinity-cart .ac-card").first); s.hold(2.6)
+    hop(s, B + "/product/kanken-classic-backpack/", ".affinity-cart .ac-card")
+    s.pg.evaluate("document.querySelector('.affinity-cart').scrollIntoView({block: 'start'}); window.scrollBy(0, -60)")
+    s.move_to(s.pg.locator(".affinity-cart .ac-reason").first); s.hold(3.2)
+    hop(s, ADMIN + "#overview", ".ac-overview")
+    s.move_to(s.pg.locator(".ac-sources, .ac-figure").first); s.hold(3.2)
+    hop(s, ADMIN + "#tribes", ".ac-tribe")
+    s.move_to(s.pg.locator(".ac-tribe .ac-culture").first); s.hold(3.2)
+    hop(s, ADMIN + "#ghost", ".ac-ghost li")
+    s.move_to(s.pg.locator(".ac-ghost .ac-chip-evidence").first); s.hold(3.0)
+
+
+SCENES = {"01-problem": scene_problem, "02-idea": scene_idea, "03-shop": scene_shop, "04-city": scene_city, "05-product": scene_product, "06-gift": scene_gift,
           "07-checkout": scene_checkout, "08-overview": scene_overview, "09-dna": scene_dna,
           "10-tribes": scene_tribes, "11-ghost": scene_ghost}
 

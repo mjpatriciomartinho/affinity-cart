@@ -1,17 +1,23 @@
 [
  {
   "id": "01-problem",
-  "kind": "card",
-  "title": "Small shops recommend like it's 2010.",
-  "sub": "Bought a kettle? Here's another kettle.",
-  "vo": "Small online shops can't recommend like Amazon. They don't have millions of orders, so their plugins just suggest more of the same. Buy a kettle, get offered another kettle."
+  "kind": "browser",
+  "vo": "Small online shops can't recommend like Amazon. Without millions of orders, their plugins fall back to more of the same. Buy a record, and you're offered another record.",
+  "overlay": {
+   "title": "Bought a record?",
+   "sub": "Here's another record.",
+   "where": "top"
+  }
  },
  {
   "id": "02-idea",
-  "kind": "card",
-  "title": "Affinity Cart",
-  "sub": "Cross-selling by taste for WooCommerce, powered by the Qloo taste graph.",
-  "vo": "Affinity Cart is a WooCommerce plugin that recommends through taste instead of sales history. It uses Qloo's taste graph to understand what a shop's customers love, across music, film, books and brands, and turns that into sales from the very first order."
+  "kind": "browser",
+  "vo": "Affinity Cart is a WooCommerce plugin that recommends by taste, not by sales history. It uses Qloo's taste graph to learn what a shop's customers love, across music, film, books and brands, and turns it into sales from the very first order.",
+  "overlay": {
+   "title": "Affinity Cart",
+   "sub": "Cross-selling by taste for WooCommerce, powered by Qloo",
+   "where": "bottom"
+  }
  },
  {
   "id": "03-shop",
