@@ -1,0 +1,68 @@
+[
+ {
+  "id": "01-problem",
+  "kind": "card",
+  "title": "Small shops recommend like it's 2010.",
+  "sub": "Bought a kettle? Here's another kettle.",
+  "vo": "Small online shops can't recommend like Amazon. They don't have millions of orders, so their plugins just suggest more of the same. Buy a kettle, get offered another kettle."
+ },
+ {
+  "id": "02-idea",
+  "kind": "card",
+  "title": "Affinity Cart",
+  "sub": "Cross-selling by taste for WooCommerce, powered by the Qloo taste graph.",
+  "vo": "Affinity Cart is a WooCommerce plugin that recommends through taste instead of sales history. It uses Qloo's taste graph to understand what a shop's customers love, across music, film, books and brands, and turns that into sales from the very first order."
+ },
+ {
+  "id": "03-shop",
+  "kind": "browser",
+  "vo": "This is Nordvik, a demo store running on real WooCommerce. A first-time visitor from Bilbao already gets picks for their taste, marked right in the catalog. No account, no history. Just their city, and Qloo."
+ },
+ {
+  "id": "04-city",
+  "kind": "browser",
+  "vo": "Change the city, and the shop changes with it. People in Berlin lean a little differently, and Qloo knows it."
+ },
+ {
+  "id": "05-product",
+  "kind": "browser",
+  "vo": "On a product page, Complete the vibe recommends across categories, and says why. Bon Iver fans also love Fjällräven and Polaroid. Then there are kits: three products the same kind of person loves, ten percent off together."
+ },
+ {
+  "id": "06-gift",
+  "kind": "browser",
+  "vo": "Shopping for someone else? The gift finder asks what they love. A Claude agent looks that taste up in Qloo, and picks only from what this shop has in stock."
+ },
+ {
+  "id": "07-checkout",
+  "kind": "browser",
+  "vo": "Checkout is plain WooCommerce. Every item that came from Affinity Cart is tagged all the way to the order line."
+ },
+ {
+  "id": "08-overview",
+  "kind": "browser",
+  "vo": "So the merchant sees exactly what Affinity Cart sold, split by source. With autopilot on, it keeps itself current: after new orders it re-reads the store and rewrites cross-sells and kits in WooCommerce on its own."
+ },
+ {
+  "id": "09-dna",
+  "kind": "browser",
+  "vo": "Under the hood, an agent translates every product into Qloo: the album, the book, the game, or the interests behind it. Hiking boots become hiking, outdoors and nature. Every request to Qloo is right there to inspect."
+ },
+ {
+  "id": "10-tribes",
+  "kind": "browser",
+  "vo": "Customers are grouped into tribes by taste, with what else they love: brands, artists, films. Export a tribe for a campaign, and the emails never leave WordPress."
+ },
+ {
+  "id": "11-ghost",
+  "kind": "browser",
+  "vo": "And the ghost catalog: what your own customers would buy, if only you sold it. One click turns it into a draft product."
+ },
+ {
+  "id": "12-close",
+  "kind": "card",
+  "title": "Affinity Cart",
+  "sub": "Taste-based cross-selling for WooCommerce, from the first order.\nQloo + Claude. Shopify next.",
+  "vo": "Affinity Cart. Cross-selling by taste, for every WooCommerce shop, from the first order."
+ }
+]
